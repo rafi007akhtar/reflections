@@ -62,3 +62,24 @@ Compares and shows the differences between the files in the working directory an
 
 15. git diff --staged
 Compares the staging area with the most recent commit present in the repository
+
+16. git reset --hard
+Discards any changes present in the working directory or the staging area.
+
+17. git branch
+Shows all the branches (forks) of the current repository, and the current branch we're on (marked with *)
+
+18. git branch <branchname>
+Creates a new branch with the name specified in the parameter
+
+19. git checkout <branchname>
+Checks out (goes to) the branch specified by branchname
+
+20. git log --graph <branchname1> <branchname2>
+Lists commits made before the second branch was added, made in the first branch after the second was added, and made in the second branch since it was added
+
+21. git log --graph --online <branchname1> <branchname2>
+Does the same thing as command #20, except it  removes everything apart from the commit id and message
+
+22. git checkout -b <newBranchName>
+Combines commands #18 and #19 in one
