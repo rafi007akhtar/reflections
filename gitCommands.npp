@@ -57,3 +57,8 @@ Opens the default editor for adding a commit message, then adds the commit (the 
 13. git commit -m "commit message"
 Adds the commit to the repository with message specified after -m (does not open the editor)
 
+14. git diff
+Compares and shows the differences between the files in the working directory and the staging area (uncommitted).
+
+15. git diff --staged
+Compares the staging area with the most recent commit present in the repository
