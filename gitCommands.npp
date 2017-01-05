@@ -1,0 +1,59 @@
+THIS DOCUMENT LISTS THE COMMANDS AND USES OF GIT, A VCS - VERSION CONTROL SYSTEM
+IT ALSO CONTAINS A FEW OTHER COMMANDS THAT GETS IN HANDY WHILE USING WINDOWS CMD OR LINUX TERMINAL/GIT BASH
+ALL GIT COMMANDS BEGIN WITH THE 'git' KEYWORD
+ALL OTHER COMMANDS ARE NOT GIT COMMANDS
+
+1. FC <old filename> <new filename>
+Used in cmd (Windows)
+Used for printing all the lines that are different in both the files
+Leaves the lines that are common to both
+Example: FC home.html home1.html
+
+2. diff -u <old filename> <new filename>
+Used in linux terminals
+Indicates the differences in both files
+- indicates the lines that were removed, + indicates the lines that were added
+Example: diff -u home.html home1.html
+
+3. To change from one drive to other using Linux Terminals, enter:
+cd //
+cd /<driveletter>
+Example:
+cd //
+cd /g
+
+4. git log
+It prints all the commits that's ever been made in a git project
+
+5. git diff <commitid1> <commitid2>
+Prints the difference between the two commits (versions of a file) with id1 and id2
+Example:  git diff 659fdfc19f6c8087ce1d21a98ca3c283706e9c00 42c666146f8145452b1ffa9a2d74970c7d1f4601
+Instead of typign the whole id, typing the first 4-5 letters also does the job
+git diff 659fd 42c66
+
+6. git log --stat
+Show the log with some statistics
+
+7. git clone <url>
+Clones (copies) the repository located on the URL given to your system
+
+8. git checkout <commitid>
+Restores a previous/next version (commit) of the currect project specified by the commit id
+
+9. git init
+Initializs or creates a new git repository
+
+10. git status
+It shows:
+* the files that have changed since the last commit
+* the untracked files present in the repository 
+
+11. git add <filename>
+Adds the file specified in the staging area (later to be committed)
+
+12. git commit
+Opens the default editor for adding a commit message, then adds the commit (the files in the staging area in a single unit) to the repository
+
+13. git commit -m "commit message"
+Adds the commit to the repository with message specified after -m (does not open the editor)
+
