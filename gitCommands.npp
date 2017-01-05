@@ -83,3 +83,10 @@ Does the same thing as command #20, except it  removes everything apart from the
 
 22. git checkout -b <newBranchName>
 Combines commands #18 and #19 in one
+
+23. git show <commitid>
+Prints the changes introduced by the commit specified before its parent
+
+24. git merge <branch1> <branch2>
+Merges both branches
+
