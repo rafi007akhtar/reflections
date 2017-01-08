@@ -90,3 +90,17 @@ Prints the changes introduced by the commit specified before its parent
 24. git merge <branch1> <branch2>
 Merges both branches
 
+25. git branch -d <branchname>
+Removes the branch label specified by branchname (does not remove the merged commits)
+
+26. git remote
+Prints all the remote branches used for sending/receiving repositories from local machine to GitHub
+
+27. git remote -v
+Does the same thing as #17 with the URLs on GitHub to send/receive data
+
+28. git remote add <remotename> <URL>
+Creates a new remote repo with the name specified in the parameter onto the GitHub URL specified
+
+29. git push <remotename> <branchname>
+Pushes (sends) the remote containing all the commits reachable by the branch name specified 
